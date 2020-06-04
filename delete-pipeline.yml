@@ -1,0 +1,18 @@
+resources:
+- repo: self
+
+jobs:
+
+- job: Job_1
+  displayName: Setup
+  condition: succeeded()
+  pool:
+    name: Hosted Ubuntu 1604
+
+  steps:
+  - task: AzureCLI@1
+    displayName: 'Delete resources'
+    inputs:
+      azureSubscription: '$(service-connection-name)'
+      scriptPath: 'delete.sh'
+      arguments: '$(resource-group) $(vm-name)'

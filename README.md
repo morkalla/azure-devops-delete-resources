@@ -1,1 +1,1 @@
-# azure-devops-delete-resources
+You can find the description here: https://morkalla.com/2020/06/04/delete-vm-with-associated-resources-in-azure-with-shell-script/
