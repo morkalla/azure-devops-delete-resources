@@ -1,0 +1,1 @@
+# azure-devops-delete-resources
